@@ -17,6 +17,8 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize viewParentPortal = _viewParentPortal;
+@synthesize studentForm = _studentForm;
 @synthesize masterPopoverController = _masterPopoverController;
 
 #pragma mark - Managing the detail item
@@ -53,6 +55,8 @@
 
 - (void)viewDidUnload
 {
+    [self setStudentForm:nil];
+    [self setViewParentPortal:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;

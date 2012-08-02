@@ -32,7 +32,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
+                                                                               target:self 
+                                                                               action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (ABMmioDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
@@ -54,7 +56,7 @@
         _objects = [[NSMutableArray alloc] init];
     }
     [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -62,27 +64,58 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    if (section==0) {
+        return 1;
+    }else if (section==1) {
+        return _objects.count;
+    }else if (section==2) {
+        return 1;
+    }else {
+        return _objects.count;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (indexPath.section==0) {
+        UITableViewCell *accounts = [tableView dequeueReusableCellWithIdentifier:@"Accounts"];
+        accounts.textLabel.text = @"Accounts blabla";
+        return accounts;
+        
+    }else if (indexPath.section==1) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+        NSDate *object = [_objects objectAtIndex:indexPath.row];
+        cell.textLabel.text = [object description];
+        return cell;
+    }else {
+        UITableViewCell *addStudent = [tableView dequeueReusableCellWithIdentifier:@"Add Student"];
+        addStudent.textLabel.text = @"+Add Student";
+        return addStudent;
+        
+    }
+    
+    
 
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
-    return cell;
+    
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    if (indexPath.section==0) {
+        return NO;
+    }else if (indexPath.section==1) {
+        return YES;
+    }else {
+        return NO;
+        
+    }
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,8 +146,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    self.detailViewController.detailItem = object;
+    if (indexPath.section==2) {
+        if (!_objects) {
+            _objects = [[NSMutableArray alloc] init];
+        }
+        [_objects insertObject:[NSDate date] atIndex:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
+                              withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self cambiar];
+        
+        
+        
+    }else if (indexPath.section==1) {
+        NSDate *object = [_objects objectAtIndex:indexPath.row];
+        self.detailViewController.detailItem = object;
+    }
+    
+}
+
+- (void)cambiar{
+    [UIView transitionFromView:self.detailViewController.viewParentPortal toView:self.detailViewController.studentForm duration:2 options:UIViewAnimationOptionTransitionCrossDissolve completion:^(BOOL finished) {
+        
+    }];
 }
 
 @end
