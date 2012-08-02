@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24E5830215CAECAB00F239E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E5830115CAECAB00F239E0 /* UIKit.framework */; };
+		24E5830415CAECAB00F239E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E5830315CAECAB00F239E0 /* Foundation.framework */; };
+		24E5830615CAECAB00F239E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E5830515CAECAB00F239E0 /* CoreGraphics.framework */; };
+		24E5830C15CAECAB00F239E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24E5830A15CAECAB00F239E0 /* InfoPlist.strings */; };
+		24E5830E15CAECAB00F239E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E5830D15CAECAB00F239E0 /* main.m */; };
+		24E5831215CAECAC00F239E0 /* ABMmioAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E5831115CAECAC00F239E0 /* ABMmioAppDelegate.m */; };
+		24E5831515CAECAC00F239E0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E5831315CAECAC00F239E0 /* MainStoryboard.storyboard */; };
+		24E5831815CAECAC00F239E0 /* ABMmioMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E5831715CAECAC00F239E0 /* ABMmioMasterViewController.m */; };
+		24E5831B15CAECAC00F239E0 /* ABMmioDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E5831A15CAECAC00F239E0 /* ABMmioDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24E582FD15CAECAB00F239E0 /* ABMmio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABMmio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E5830115CAECAB00F239E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24E5830315CAECAB00F239E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24E5830515CAECAB00F239E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24E5830915CAECAB00F239E0 /* ABMmio-Info.plist */ = {isa = PBXFileReference; path = "ABMmio-Info.plist"; sourceTree = "<group>"; };
+		24E5830B15CAECAB00F239E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24E5830D15CAECAB00F239E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24E5830F15CAECAB00F239E0 /* ABMmio-Prefix.pch */ = {isa = PBXFileReference; path = "ABMmio-Prefix.pch"; sourceTree = "<group>"; };
+		24E5831015CAECAB00F239E0 /* ABMmioAppDelegate.h */ = {isa = PBXFileReference; path = ABMmioAppDelegate.h; sourceTree = "<group>"; };
+		24E5831115CAECAC00F239E0 /* ABMmioAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMmioAppDelegate.m; sourceTree = "<group>"; };
+		24E5831415CAECAC00F239E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		24E5831615CAECAC00F239E0 /* ABMmioMasterViewController.h */ = {isa = PBXFileReference; path = ABMmioMasterViewController.h; sourceTree = "<group>"; };
+		24E5831715CAECAC00F239E0 /* ABMmioMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMmioMasterViewController.m; sourceTree = "<group>"; };
+		24E5831915CAECAC00F239E0 /* ABMmioDetailViewController.h */ = {isa = PBXFileReference; path = ABMmioDetailViewController.h; sourceTree = "<group>"; };
+		24E5831A15CAECAC00F239E0 /* ABMmioDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMmioDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E582FA15CAECAB00F239E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E5830215CAECAB00F239E0 /* UIKit.framework in Frameworks */,
+				24E5830415CAECAB00F239E0 /* Foundation.framework in Frameworks */,
+				24E5830615CAECAB00F239E0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E582F215CAECAB00F239E0 = {
+			isa = PBXGroup;
+			children = (
+				24E5830715CAECAB00F239E0 /* ABMmio */,
+				24E5830015CAECAB00F239E0 /* Frameworks */,
+				24E582FE15CAECAB00F239E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24E582FE15CAECAB00F239E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E582FD15CAECAB00F239E0 /* ABMmio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E5830015CAECAB00F239E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E5830115CAECAB00F239E0 /* UIKit.framework */,
+				24E5830315CAECAB00F239E0 /* Foundation.framework */,
+				24E5830515CAECAB00F239E0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24E5830715CAECAB00F239E0 /* ABMmio */ = {
+			isa = PBXGroup;
+			children = (
+				24E5831015CAECAB00F239E0 /* ABMmioAppDelegate.h */,
+				24E5831115CAECAC00F239E0 /* ABMmioAppDelegate.m */,
+				24E5831315CAECAC00F239E0 /* MainStoryboard.storyboard */,
+				24E5831615CAECAC00F239E0 /* ABMmioMasterViewController.h */,
+				24E5831715CAECAC00F239E0 /* ABMmioMasterViewController.m */,
+				24E5831915CAECAC00F239E0 /* ABMmioDetailViewController.h */,
+				24E5831A15CAECAC00F239E0 /* ABMmioDetailViewController.m */,
+				24E5830815CAECAB00F239E0 /* Supporting Files */,
+			);
+			path = ABMmio;
+			sourceTree = "<group>";
+		};
+		24E5830815CAECAB00F239E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24E5830915CAECAB00F239E0 /* ABMmio-Info.plist */,
+				24E5830A15CAECAB00F239E0 /* InfoPlist.strings */,
+				24E5830D15CAECAB00F239E0 /* main.m */,
+				24E5830F15CAECAB00F239E0 /* ABMmio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24E582FC15CAECAB00F239E0 /* ABMmio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E5831E15CAECAC00F239E0 /* Build configuration list for PBXNativeTarget "ABMmio" */;
+			buildPhases = (
+				24E582F915CAECAB00F239E0 /* Sources */,
+				24E582FA15CAECAB00F239E0 /* Frameworks */,
+				24E582FB15CAECAB00F239E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABMmio;
+			productName = ABMmio;
+			productReference = 24E582FD15CAECAB00F239E0 /* ABMmio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E582F415CAECAB00F239E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ABMmio;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "LSR Marketing Service";
+			};
+			buildConfigurationList = 24E582F715CAECAB00F239E0 /* Build configuration list for PBXProject "ABMmio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24E582F215CAECAB00F239E0;
+			productRefGroup = 24E582FE15CAECAB00F239E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E582FC15CAECAB00F239E0 /* ABMmio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E582FB15CAECAB00F239E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E5830C15CAECAB00F239E0 /* InfoPlist.strings in Resources */,
+				24E5831515CAECAC00F239E0 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E582F915CAECAB00F239E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E5830E15CAECAB00F239E0 /* main.m in Sources */,
+				24E5831215CAECAC00F239E0 /* ABMmioAppDelegate.m in Sources */,
+				24E5831815CAECAC00F239E0 /* ABMmioMasterViewController.m in Sources */,
+				24E5831B15CAECAC00F239E0 /* ABMmioDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24E5830A15CAECAB00F239E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E5830B15CAECAB00F239E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		24E5831315CAECAC00F239E0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E5831415CAECAC00F239E0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24E5831C15CAECAC00F239E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		24E5831D15CAECAC00F239E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24E5831F15CAECAC00F239E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABMmio/ABMmio-Prefix.pch";
+				INFOPLIST_FILE = "ABMmio/ABMmio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		24E5832015CAECAC00F239E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABMmio/ABMmio-Prefix.pch";
+				INFOPLIST_FILE = "ABMmio/ABMmio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E582F715CAECAB00F239E0 /* Build configuration list for PBXProject "ABMmio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5831C15CAECAC00F239E0 /* Debug */,
+				24E5831D15CAECAC00F239E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E5831E15CAECAC00F239E0 /* Build configuration list for PBXNativeTarget "ABMmio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5831F15CAECAC00F239E0 /* Debug */,
+				24E5832015CAECAC00F239E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24E582F415CAECAB00F239E0 /* Project object */;
+}
